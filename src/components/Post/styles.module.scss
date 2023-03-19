@@ -110,8 +110,13 @@
 
       transition: 0.2s background-color ease-in-out;
 
-      &:hover {
+      &:hover:enabled {
         background-color: var(--green-300);
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
       }
     }
   }
